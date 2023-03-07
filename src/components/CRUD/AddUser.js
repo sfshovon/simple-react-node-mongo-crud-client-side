@@ -8,7 +8,7 @@ const AddUser = () => {
     const user = {name, email};
 
     // send data to the server
-    fetch('http://localhost:5000/user', {
+    fetch('https://simple-react-node-mongo-crud-server-side.vercel.app/user', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

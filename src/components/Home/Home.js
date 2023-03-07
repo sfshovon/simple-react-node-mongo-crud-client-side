@@ -5,7 +5,7 @@ const Home = () => {
   const [users,setUsers] = useState([]);
 
   useEffect( () => {
-    fetch('http://localhost:5000/user')
+    fetch('https://simple-react-node-mongo-crud-server-side.vercel.app/user')
     .then(res => res.json()
     .then(data => setUsers(data)))
   },[]);
@@ -14,7 +14,7 @@ const Home = () => {
     const proceed = window.confirm("Are you sure you want to delete this user?");
     if(proceed){
       // console.log("Deleting user with ID: ",id)
-      const url = `http://localhost:5000/user/${id}`;
+      const url = `https://simple-react-node-mongo-crud-server-side.vercel.app/user/${id}`;
       fetch(url, {
         method: 'DELETE'
       })
