@@ -1,7 +1,7 @@
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const UserInfo = ({user, handleUserDelete}) => {
 
@@ -18,7 +18,6 @@ const UserInfo = ({user, handleUserDelete}) => {
       </td>
       <td  className="w-full px-5 py-5 border-b text-sm">
         <button onClick={() => handleUserDelete(user._id)} className="inline-block btn-sm bg-red-700 text-white px-2 py-1 rounded-full">
-        
         <FontAwesomeIcon className="hover:text-zinc-900" icon={faTrash}/>   
         </button>
       </td>

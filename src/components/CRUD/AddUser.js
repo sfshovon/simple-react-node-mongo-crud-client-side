@@ -6,7 +6,6 @@ const AddUser = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const user = {name, email};
-
     // send data to the server
     fetch('https://simple-react-node-mongo-crud-server-side.vercel.app/user', {
         method: 'POST',
